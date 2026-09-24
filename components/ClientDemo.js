@@ -1,4 +1,10 @@
+"use client";
+
+import RSCDemo from "./RSCDemo";
+
 export default function ClientDemo({ children }) {
+  //   const [count, setCount] = useState();
+
   console.log("ClientDemo rendered");
   return (
     <div className="client-cmp">
@@ -6,7 +12,7 @@ export default function ClientDemo({ children }) {
       <p>
         Will be rendered on the client <strong>AND</strong> the server.
       </p>
-      {children}
+      <RSCDemo />
     </div>
   );
 }
